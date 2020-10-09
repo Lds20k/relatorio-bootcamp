@@ -8,8 +8,8 @@ Já a extrínsecas é toda informação não necessária que também ocupa a mem
 
 ## CDD em prática
 O CDD é um conjunto de pontos de carga intrínseca que diz quão complexo é o código, isto é, não é o desenvolvedor dá a complexidade e sim um cálculo de pontos.
-Para cada acoplamento, estrutura de decisão e tratamento de exceção conta-se um ponto, para tecnologias transversais não se conta ponto.  
+Para cada acoplamento, estrutura de decisão, estrutura de repetição e estrutura de tratamento de exceção conta-se um ponto, para tecnologias transversais e anotações não se conta ponto.  
 Com essa noção dá para perceber que que o CDD favorece o baixo acoplamento e a separação das estruturas do código.  
-Se aconselha-se dar um limite de 7 pontos por classes, mas podendo ser ultrapassado ou moldado.
+Se aconselha-se dar um limite de 7 pontos por classes de controle e 9 para calsses domínio, mas podendo ser ultrapassado ou moldado.
 
 [Voltar](../README.md)
