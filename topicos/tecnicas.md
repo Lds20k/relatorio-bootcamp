@@ -53,6 +53,21 @@ O JPA usa esta classe para fazer as operações com o banco de dados, então é 
 
 Para salvar classes aninhadas, é necessário que todas as parte que o possuem aninhamento e sejam não-nulo estejam atribuídas devidamente. Caso contrário o será lançado um expection para de erro com campo nulo no banco.
 
+## Health Check 
 
+Implementar um health check é muito importante para monitorar a saúde da aplicação, para isso é feito um endpoint que retorna um status da aplicação.
+O Spring Actuator age justamente em cima disso, quando adicionado ao pom é criado vários endpoint que indicam o estado da aplicação.
+Para adicioná-lo usa-se o seguinte XML
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+</dependencies>
+```
+
+Para acessar esses endpoint deve-se fazer a requisição para `{endereço-do-host}/actuator/{endpoint}`, a tabela de endpoints está disponível [aqui](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints).
 
 [Voltar](../README.md)
