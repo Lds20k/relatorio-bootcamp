@@ -70,6 +70,6 @@ Para adicioná-lo usa-se o seguinte XML
 
 Por questões de segurança é necessário ativar os endpoint, para fazer isto basta ir no arquivo application do Spring e adicionar `management.endpoint.<id>.enabled=true`, as ids estão disponiveis [aqui](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints).
 
-Para acessar esses endpoint deve-se fazer a requisição para `{endereço-do-host}/actuator/{endpoint}`, a tabela de endpoints está disponível [aqui](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints).
+Para acessar esses endpoint deve-se fazer a requisição para `<endereço-do-host>/actuator/<id>`, a tabela de endpoints está disponível [aqui](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints).
 
 [Voltar](../README.md)
